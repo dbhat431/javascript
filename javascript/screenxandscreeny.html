@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS screenX and screenY</title>
+   <style>
+    body{
+        font-family: arial;
+    }
+    #box{
+        width: 400px;
+        height: 300px;
+        border: 1px solid #000;
+        background:pink;
+        
+    }
+    
+   </style>
+</head>
+<body>
+ <h2>JS screenX and screenY</h2>
+ <div id="box"></div>
+<script>
+   document.addEventListener('#box').addEventListener('click',function(e){
+    console.clear();
+    var x=e.screenX;
+    var y=e.screenY;
+    var x2=e.clientX;
+    var y2=e.clientY;
+    console.log("screenX :"+x);
+    console.log("clientX :"+x2);
+
+    console.log("screenY :"+y);
+    console.log("clientY :"+y2);
+   });
+</script>
+</body>
+</html>

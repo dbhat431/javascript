@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS offsetX and offsetY</title>
+   <style>
+    body{
+        font-family: arial;
+    }
+    #box{
+        width: 400px;
+        height: 200px;
+        border: 1px solid #000;
+        background:pink;
+        margin: 100px;
+    }
+    
+   </style>
+</head>
+<body>
+ <h2>JS offsetX and offsetY</h2>
+ <div id="box"></div>
+<script>
+   document.querySelector('#box');
+   target.addEventListener('mousemove',function(e){
+    console.clear();
+    var x=e.offsetX;
+    var y=e.offsetY;
+    console('offsetX :'+x);
+    console('offsetY :'+y);
+   });
+</script>
+</body>
+</html>

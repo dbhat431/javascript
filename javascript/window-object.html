@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Js
+        </title>
+    </head>
+    <body onresize="resizeFunction()">
+        <script>
+            function resizeFunction(){
+                console.clear();
+            // var iHeight=window.innerHeight;
+            // console.log('Inner Height:'+iHeight);
+            // var oHeight=window.outerHeight;
+            // console.log('Outer Height:'+oHeight);
+            var iWidth=window.innerWidth;
+            console.log('Inner width:'+iWidth);
+            var oWidth=window.outerWidth;
+            console.log('Outer width:'+oWidth);
+            }
+        </script>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Js
+        </title>
+    </head>
+    <body>
+        <button onclick="openWindow()">Open Window</button>
+        <button onclick="resizeWindow()">Resize Window</button>
+        <!-- <button onclick="closeWindow()">Close Window</button> -->
+        <!-- <button onclick="moveWindow()">Move Window</button> -->
+        <script>
+            var myWindow;
+            function openWindow(){
+                myWindow=window.open("","","width=200px,height=200px,left=30px,top=30px");
+                myWindow.document.write("<p>This is my Window.</p>")
+            }
+            // function moveWindow(){
+            //         myWindow.moveTo(200,200);
+            //         myWindow.moveBy(200,200);
+            //          myWindow.focus();
+            // }
+            function resizeWindow(){
+                // myWindow.resizeTo(400,400);
+                myWindow.resizeBy(400,400);
+            }
+        </script>
+    </body>
+</html>

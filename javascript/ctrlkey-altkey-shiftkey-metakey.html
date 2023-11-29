@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS :CtrlKey,ShiftKey,AltKey,MetaKey</title>
+   <style>
+   
+    
+    #box{
+        width: 400px;
+        height: 300px;
+        border: 1px solid #000;
+        background:pink;
+        margin: 20px;
+    }
+    
+   </style>
+</head>
+<body>
+
+ <div id="box"></div>
+ <input type="text" id="mytextbox">
+<script>
+  var target=document.querySelector('#mytextbox');
+  target.addEventListener('keydown',function(e){
+    console.clear();
+//    var ctrl=e.ctrlKey;
+//    console.log(ctrl);
+//  if(ctrl){
+//        console.log('You pressed control key');
+//  }else{
+//     console.log('You have not pressed control key');
+//  }
+
+// var shift=e.shiftKey;
+//    console.log(ctrl);
+//  if(shift){
+//        console.log('You pressed shift key');
+//  }else{
+//     console.log('You have not pressed shift key');
+//  }
+
+// var alt=e.altKey;
+//    console.log(alt);
+//  if(alt){
+//        console.log('You pressed alt key');
+//  }else{
+//     console.log('You have not pressed alt key');
+//  }
+
+// var meta=e.metaKey;
+//    console.log(alt);
+//  if(meta){
+//        console.log('You pressed meta key');
+//  }else{
+//     console.log('You have not pressed meta key');
+//  }
+
+var k;
+switch(true){
+    case e.metaKey:
+        k="Meta Key";
+        break;
+    case e.altKey:
+        k="Alt Key";
+        break;
+    case e.shiftKey:
+        k="Shift Key;"
+        break;
+    case e.ctrlKey:
+        k="Control Key";
+        break;
+    default:
+        k="Other key pressed";
+        break;
+}
+ console.log(k);
+  });
+</script>
+</body>
+</html>

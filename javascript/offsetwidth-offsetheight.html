@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS offsetwidth & offsetheight</title>
+   <style>
+    body{
+        font-family: arial;
+    }
+    #box{
+        background:orange;
+        width: 300px;
+        height: 300px;
+        border:10px solid #000; 
+        padding: 10px;
+        overflow: auto;
+    }
+    
+   </style>
+</head>
+<body>
+   <h2>JS: offsetwidth & offsetheight</h2>
+   <div id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aperiam magnam consectetur unde pariatur omnis repudiandae eveniet, quod voluptatibus recusandae similique dicta voluptatum aspernatur vel obcaecati laborum dignissimos ad vero laudantium illum possimus, sequi iste accusantium ut. Quisquam, perferendis commodi quod voluptatem iste eos explicabo distinctio laboriosam accusamus cumque cum delectus itaque maiores enim pariatur rem libero quia deserunt suscipit blanditiis laudantium. Facilis magni fugit nobis culpa maiores perferendis quasi ea laudantium vero sed ipsa corporis in beatae quas doloremque recusandae quidem totam dolorem amet, atque nisi porro reiciendis! Magni ducimus explicabo veritatis? Reprehenderit excepturi laborum fugiat omnis impedit cumque nam rerum, repellat architecto molestiae optio asperiores et sapiente libero perspiciatis! Error, voluptatibus libero. Consequuntur temporibus ab voluptatem rerum dolorum atque odit vero laudantium ullam, error culpa accusamus facilis at? Dicta expedita incidunt porro doloribus aspernatur quaerat modi at repellendus pariatur, sint molestiae veniam. Aperiam, accusantium fuga nulla amet iste velit eius aliquam qui labore saepe inventore consectetur nostrum maiores omnis, ratione obcaecati consequatur sapiente beatae ducimus id voluptas. Ducimus quibusdam cum, quisquam quia eligendi molestiae voluptate itaque at aspernatur laborum? Voluptates delectus provident id repellendus, accusamus eveniet quaerat veritatis non. Neque libero officia fugit ut aliquam a quisquam delectus ducimus quae aut quasi autem quas voluptatem vitae ad ullam et laboriosam dolor facilis, quis quaerat odit perspiciatis architecto magnam? Dolore distinctio voluptatum aperiam accusantium quos necessitatibus voluptas adipisci fugit totam quisquam, perspiciatis laboriosam asperiores doloremque voluptates qui libero corrupti labore culpa ex! Dignissimos debitis perferendis deleniti ad labore nostrum aliquam culpa ipsum veritatis suscipit, eum earum! Eum vel necessitatibus hic molestias deleniti. Asperiores quidem facilis nihil itaque soluta sint, molestiae tempore labore, sed expedita at minima perspiciatis odit suscipit atque amet. Numquam deleniti a nam omnis corporis sit adipisci exercitationem quos dignissimos unde sequi autem fugiat quibusdam veniam vero aut dolorum modi officia fugit, at voluptatem corrupti architecto. Itaque accusamus maxime illum, quas, a, ratione voluptatibus ipsa hic fuga ducimus excepturi delectus quibusdam nam. Nam atque reprehenderit dolorem at deleniti nihil, nobis, deserunt et dolorum fugiat pariatur alias expedita placeat illum, quibusdam necessitatibus sunt! Autem ipsa consectetur quam nobis laudantium magnam architecto nisi fugit, unde totam minus, maiores tempora suscipit eligendi similique vero sit error sed fuga at! Animi veritatis tenetur eos dicta eius commodi alias perspiciatis et non amet! Incidunt optio, consectetur sint nostrum nesciunt exercitationem. Et quam cum molestias velit ratione commodi sequi sunt consequuntur, laboriosam corporis!</div>
+<script>
+    var target=document.querySelector("#box");
+    var width=target.offsetWidth;
+    var height=target.offsetHeight;
+    console.log("OfsetWidth :"+width);
+    console.log("OfsetHeight :"+height);
+
+</script>
+</body>
+</html>

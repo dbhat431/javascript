@@ -1,0 +1,26 @@
+@import "color.css";
+@import "printstyle.css" print;
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font: 18px/24px arial;
+}
+#wrapper{
+    border: 1px solid black;
+    width: 1000px;
+    background: white;
+    margin: 0 auto;
+}
+
+#top-bar{
+    background: mediumpurple;
+}
+#top-bar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
